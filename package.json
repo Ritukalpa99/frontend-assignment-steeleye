@@ -1,0 +1,26 @@
+{
+  "name": "steeleye-frontend",
+  "version": "1.0.0",
+  "description": "Steeleye's frontend assignment solution",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ritukalpa99/frontend-assignment-steeleye.git"
+  },
+  "author": "Ritukalpa Gogoi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ritukalpa99/frontend-assignment-steeleye/issues"
+  },
+  "homepage": "https://github.com/Ritukalpa99/frontend-assignment-steeleye#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.7.0",
+    "process": "^0.11.10"
+  }
+}
