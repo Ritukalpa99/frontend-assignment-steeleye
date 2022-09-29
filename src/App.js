@@ -1,5 +1,23 @@
+import List from "./List"
+
+const items =[ {
+    text :"A",
+  },
+  {
+    text :"B",
+  },
+  {
+    text :"C",
+  },
+  {
+    text :"D",
+  },
+  {
+    text :"E",
+  },
+]
 const App = () => (
-    <h1>It works</h1>
+    <List items={items}/>
 )
 
 export default App
