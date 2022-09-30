@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Steeleye's frontend assignment solution",
   "scripts": {
-    "start": "parcel src/index.html"
+    "start": "parcel src/index.html",
+    "build": "parcel src/index.html --dist-dir out"
   },
   "repository": {
     "type": "git",
