@@ -1,6 +1,6 @@
 import React, { useState, useEffect, memo } from 'react';
 import PropTypes from 'prop-types';
-
+ import "./styles.css";
 // Single List Item
 const WrappedSingleListItem = ({
   index,
