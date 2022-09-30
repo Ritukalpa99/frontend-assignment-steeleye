@@ -28,7 +28,6 @@ WrappedSingleListItem.propTypes = {
 const SingleListItem = memo(WrappedSingleListItem);
 
 
-//selectedIndex
 // List Component
 const WrappedListComponent = ({
   items,

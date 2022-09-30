@@ -1,23 +1,23 @@
-import List from "./List"
+import List from "./List";
 
 const items =[ {
-    text :"A",
+    text :"Shutter Island",
   },
   {
-    text :"B",
+    text :"The Shawshank Redemption",
   },
   {
-    text :"C",
+    text :"The man who knew Infinity",
   },
   {
-    text :"D",
+    text :"John Wick",
   },
   {
-    text :"E",
+    text :"The Lord of the Rings",
   },
 ]
 const App = () => (
     <List items={items}/>
-)
+);
 
-export default App
+export default App;
