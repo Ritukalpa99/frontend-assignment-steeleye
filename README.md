@@ -5,9 +5,9 @@
 ## Question and Answer
 
 ### 1. Explain what the simple `List` component does? 
- Reviewing the original code, it is filled with erros, so it would not display any output. \
+ Reviewing the original code, it is filled with errors, so it would not display any output. \
 However by fixing the code, this is what I think `List` component is intented to do  
-- `WrappedSingleListItem` accetps `index`,`isSelected`, `onClickHandler` and `text` as `props` and returns a `<li>` element displayig the `text` value.
+- `WrappedSingleListItem` accepts `index`,`isSelected`, `onClickHandler` and `text` as `props` and returns a `<li>` element displayig the `text` value.
 - The `WrappedListComponent` returns an `<ul>` element containing `<SingleListItem>` which is just memoized `<WrappedSingleListItem>` component.
 - As output, the program displays a list containt `text` in them.
 - At first, all the list items are `red` in color.
@@ -37,19 +37,19 @@ return (
     </li>
 );
 ```
-In our code,we use `array function`.
+In our code,we use `arrow function`.
 
 ### Error 2
-Interchange `setSelectedIndex`,`selectedIndex` in `[setSelectedIndex,selectedIndex]` \
+Interchange `setSelectedIndex`,`selectedIndex` in `[setSelectedIndex,selectedIndex]`. \
 `useState()` returns a pair of values : the current state and a function that updates the current state. \
-Since, in following code both `useEffect()` and `handleClick()` use `setSelectedIndex()`, we'll use this as our function and `selectedIndex` as our current state.
+Since, in following code, both `useEffect()` and `handleClick()` use `setSelectedIndex()`, we'll use this as our function and `selectedIndex` as our current state.
 ```js
     const [selectedIndex, setSelectedIndex] = useState();
 ```
 ### Error 3
-In the `return` part of `WrappedListComponent`, we see the `isSelected` is given a value `selectedIndex` \
+In the `return` part of `WrappedListComponent`, we see that `isSelected` is given a value `selectedIndex` \
 But `isSelected` is a boolean type, so it'll only accept `true` or `false`.
-Here, we need to make a check that whether the index of the given element is same as the index of the element clicked.
+Here, we need to make a check that whether the index of a given element is same as the index of the element clicked.
 ```js
 isSelected={selectedIndex === index}
 ```
